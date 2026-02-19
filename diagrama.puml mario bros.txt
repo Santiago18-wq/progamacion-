@@ -1,0 +1,68 @@
+@startuml
+
+class Mario
+
+class SuperMushroom
+class FireFlower
+class Star
+class GreenShell
+class RedShell
+class BlueShell
+class Banana
+class Coin
+class QuestionBlock
+class BrickBlock
+class Pipe
+class Kart
+class Glider
+class Cannon
+class CapeFeather
+class IceFlower
+class MegaMushroom
+class MiniMushroom
+class TanookiLeaf
+class BoomerangFlower
+class HammerSuit
+class PropellerMushroom
+class PenguinSuit
+class FrogSuit
+class SuperBell
+class DoubleCherry
+class LuckyBell
+class DashMushroom
+class POWBlock
+class CloudFlower
+
+Mario *-- Kart
+Mario *-- Glider
+Mario *-- Coin
+Mario *-- QuestionBlock
+Mario *-- BrickBlock
+Mario *-- Pipe
+Mario *-- Cannon
+Mario *-- DashMushroom
+Mario *-- POWBlock
+Mario *-- CloudFlower
+Mario *-- SuperBell
+Mario *-- DoubleCherry
+Mario *-- LuckyBell
+Mario *-- HammerSuit
+Mario *-- PenguinSuit
+
+Mario o-- SuperMushroom
+Mario o-- FireFlower
+Mario o-- Star
+Mario o-- GreenShell
+Mario o-- RedShell
+Mario o-- BlueShell
+Mario o-- Banana
+Mario o-- CapeFeather
+Mario o-- IceFlower
+Mario o-- MegaMushroom
+Mario o-- MiniMushroom
+Mario o-- TanookiLeaf
+Mario o-- BoomerangFlower
+Mario o-- PropellerMushroom
+Mario o-- FrogSuit
+
+@enduml
