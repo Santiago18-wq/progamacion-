@@ -1,0 +1,68 @@
+@startuml
+
+class Mario
+
+class SuperMushroom
+class FireFlower
+class Star
+class GreenShell
+class RedShell
+class BlueShell
+class Banana
+class Coin
+class QuestionBlock
+class BrickBlock
+class Pipe
+class Kart
+class Glider
+class Cannon
+class CapeFeather
+class IceFlower
+class MegaMushroom
+class MiniMushroom
+class TanookiLeaf
+class BoomerangFlower
+class HammerSuit
+class PropellerMushroom
+class PenguinSuit
+class FrogSuit
+class SuperBell
+class DoubleCherry
+class LuckyBell
+class DashMushroom
+class POWBlock
+class CloudFlower
+
+Mario "1" *-- "*" Kart
+Mario "1" *-- "*" Glider
+Mario "1" *-- "*" Coin
+Mario "1" *-- "*" QuestionBlock
+Mario "1" *-- "*" BrickBlock
+Mario "1" *-- "*" Pipe
+Mario "1" *-- "*" Cannon
+Mario "1" *-- "*" DashMushroom
+Mario "1" *-- "*" POWBlock
+Mario "1" *-- "*" CloudFlower
+Mario "1" *-- "*" SuperBell
+Mario "1" *-- "*" DoubleCherry
+Mario "1" *-- "*" LuckyBell
+Mario "1" *-- "*" HammerSuit
+Mario "1" *-- "*" PenguinSuit
+
+Mario "1" o-- "*" SuperMushroom
+Mario "1" o-- "*" FireFlower
+Mario "1" o-- "*" Star
+Mario "1" o-- "*" GreenShell
+Mario "1" o-- "*" RedShell
+Mario "1" o-- "*" BlueShell
+Mario "1" o-- "*" Banana
+Mario "1" o-- "*" CapeFeather
+Mario "1" o-- "*" IceFlower
+Mario "1" o-- "*" MegaMushroom
+Mario "1" o-- "*" MiniMushroom
+Mario "1" o-- "*" TanookiLeaf
+Mario "1" o-- "*" BoomerangFlower
+Mario "1" o-- "*" PropellerMushroom
+Mario "1" o-- "*" FrogSuit
+
+@enduml
