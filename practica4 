@@ -1,0 +1,101 @@
+@startuml
+
+class Usuario
+
+class Mario{
+    +Comer(Item)
+    +LanzarObjeto()
+}
+
+class Vida
+
+class Item
+
+class SuperMushroom
+class FireFlower
+class Star
+class GreenShell
+class RedShell
+class BlueShell
+class Banana
+class CapeFeather
+class IceFlower
+class MegaMushroom
+class MiniMushroom
+class TanookiLeaf
+class BoomerangFlower
+class PropellerMushroom
+class FrogSuit
+
+SuperMushroom --|> Item
+FireFlower --|> Item
+Star --|> Item
+GreenShell --|> Item
+RedShell --|> Item
+BlueShell --|> Item
+Banana --|> Item
+CapeFeather --|> Item
+IceFlower --|> Item
+MegaMushroom --|> Item
+MiniMushroom --|> Item
+TanookiLeaf --|> Item
+BoomerangFlower --|> Item
+PropellerMushroom --|> Item
+FrogSuit --|> Item
+
+class QuestionBlock{
+    -contenido : Item
+    +Golpear()
+}
+
+class BrickBlock{
+    +Romper()
+}
+
+class Pipe{
+    +Transportar()
+}
+
+class Cannon{
+    +Disparar()
+}
+
+class POWBlock{
+    +Activar()
+}
+
+class Kart
+class Glider
+class HammerSuit
+class PenguinSuit
+class SuperBell
+class DoubleCherry
+class LuckyBell
+class DashMushroom
+class CloudFlower
+class Coin
+
+Usuario o-- Mario
+
+Mario *-- Vida
+Mario o-- Item
+
+Mario "1" -- "0..1" Kart
+Mario "1" -- "0..1" Glider
+Mario "1" -- "0..*" Coin
+Mario "1" -- "0..*" QuestionBlock
+Mario "1" -- "0..*" BrickBlock
+Mario "1" -- "0..*" Pipe
+Mario "1" -- "0..*" Cannon
+Mario "1" -- "0..*" DashMushroom
+Mario "1" -- "0..*" POWBlock
+Mario "1" -- "0..*" CloudFlower
+Mario "1" -- "0..1" SuperBell
+Mario "1" -- "0..*" DoubleCherry
+Mario "1" -- "0..1" LuckyBell
+Mario "1" -- "0..1" HammerSuit
+Mario "1" -- "0..1" PenguinSuit
+
+QuestionBlock "1" -- "1..*" Item
+
+@enduml
